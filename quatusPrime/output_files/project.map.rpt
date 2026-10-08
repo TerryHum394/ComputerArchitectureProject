@@ -1,5 +1,5 @@
-Analysis & Elaboration report for project
-Thu Oct  8 15:13:04 2026
+Analysis & Synthesis report for project
+Thu Oct  8 16:39:42 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -7,10 +7,16 @@ Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -34,47 +40,36 @@ on the Quartus Prime software download page.
 
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                  ;
-+-------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Oct  8 15:13:04 2026           ;
-; Quartus Prime Version         ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
-; Revision Name                 ; project                                         ;
-; Top-level Entity Name         ; aluProject                                      ;
-; Family                        ; Cyclone V                                       ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                       ;
-; Total registers               ; N/A until Partition Merge                       ;
-; Total pins                    ; N/A until Partition Merge                       ;
-; Total virtual pins            ; N/A until Partition Merge                       ;
-; Total block memory bits       ; N/A until Partition Merge                       ;
-; Total PLLs                    ; N/A until Partition Merge                       ;
-; Total DLLs                    ; N/A until Partition Merge                       ;
-+-------------------------------+-------------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 20          ;
-; Maximum allowed            ; 14          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++---------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Oct  8 16:39:42 2026           ;
+; Quartus Prime Version           ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
+; Revision Name                   ; project                                         ;
+; Top-level Entity Name           ; ALUsel_setter                                   ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 0                                               ;
+; Total pins                      ; 20                                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 0                                               ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEBA6U23I7       ;                    ;
-; Top-level entity name                                                           ; aluProject         ; project            ;
+; Top-level entity name                                                           ; ALUsel_setter      ; project            ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -155,16 +150,151 @@ on the Quartus Prime software download page.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 14          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                       ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------+---------+
+; opcode_decoder.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Scratch/s3947618/quatusPrime/opcode_decoder.bdf ;         ;
+; func7_decoder.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Scratch/s3947618/quatusPrime/func7_decoder.bdf  ;         ;
+; func3_decoder.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Scratch/s3947618/quatusPrime/func3_decoder.bdf  ;         ;
+; ALUsel_setter.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Scratch/s3947618/quatusPrime/ALUsel_setter.bdf  ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 12             ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 18             ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 6              ;
+;     -- 5 input functions                    ; 5              ;
+;     -- 4 input functions                    ; 2              ;
+;     -- <=3 input functions                  ; 5              ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 20             ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; func3[2]~input ;
+; Maximum fan-out                             ; 7              ;
+; Total fan-out                               ; 109            ;
+; Average fan-out                             ; 1.88           ;
++---------------------------------------------+----------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                       ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Entity Name    ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+----------------+--------------+
+; |ALUsel_setter             ; 18 (14)             ; 0 (0)                     ; 0                 ; 0          ; 20   ; 0            ; |ALUsel_setter                      ; ALUsel_setter  ; work         ;
+;    |func7_decoder:inst20|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALUsel_setter|func7_decoder:inst20 ; func7_decoder  ; work         ;
+;    |opcode_decoder:inst|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALUsel_setter|opcode_decoder:inst  ; opcode_decoder ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_io_obuf        ; 3                           ;
+; arriav_lcell_comb     ; 18                          ;
+;     normal            ; 18                          ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 2                           ;
+;         5 data inputs ; 5                           ;
+;         6 data inputs ; 6                           ;
+; boundary_port         ; 20                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 3.55                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Thu Oct  8 15:12:57 2026
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project -c project --analysis_and_elaboration
+    Info: Processing started: Thu Oct  8 16:39:34 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project -c project
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file wdsel_setter.bdf
+    Info (12023): Found entity 1: WDSel_setter
+Info (12021): Found 1 design units, including 1 entities, in source file tri_2bit.bdf
+    Info (12023): Found entity 1: tri_2Bit
+Info (12021): Found 1 design units, including 1 entities, in source file regwrite_setter.bdf
+    Info (12023): Found entity 1: REGwrite_setter
+Info (12021): Found 1 design units, including 1 entities, in source file pcsel_setter.bdf
+    Info (12023): Found entity 1: PCSel_setter
+Info (12021): Found 1 design units, including 1 entities, in source file opcode_decoder.bdf
+    Info (12023): Found entity 1: opcode_decoder
+Info (12021): Found 1 design units, including 1 entities, in source file mux32bit3way.bdf
+    Info (12023): Found entity 1: mux32Bit3Way
+Info (12021): Found 1 design units, including 1 entities, in source file memrw_setter.bdf
+    Info (12023): Found entity 1: MemRW_setter
+Info (12021): Found 1 design units, including 1 entities, in source file func7_decoder.bdf
+    Info (12023): Found entity 1: func7_decoder
+Info (12021): Found 1 design units, including 1 entities, in source file func3_decoder.bdf
+    Info (12023): Found entity 1: func3_decoder
+Info (12021): Found 1 design units, including 1 entities, in source file control_unit.bdf
+    Info (12023): Found entity 1: control_unit
+Info (12021): Found 1 design units, including 1 entities, in source file bsel_setter.bdf
+    Info (12023): Found entity 1: Bsel_setter
+Info (12021): Found 1 design units, including 1 entities, in source file alusel_setter.bdf
+    Info (12023): Found entity 1: ALUsel_setter
 Info (12021): Found 1 design units, including 1 entities, in source file zerodectector32bit.bdf
     Info (12023): Found entity 1: zeroDectector32Bit
 Info (12021): Found 1 design units, including 1 entities, in source file twoscomplement4bit_overflow.bdf
@@ -201,25 +331,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file rippleb
     Info (12023): Found entity 1: rippleBorrower32Bit
 Info (12021): Found 1 design units, including 1 entities, in source file rippleborrower1bit.bdf
     Info (12023): Found entity 1: rippleBorrower1Bit
-Info (12127): Elaborating entity "aluProject" for the top level hierarchy
-Info (12128): Elaborating entity "mux1Bit2Way" for hierarchy "mux1Bit2Way:inst17"
-Info (12128): Elaborating entity "rippleCarryAdder32Bit" for hierarchy "rippleCarryAdder32Bit:inst"
-Info (12128): Elaborating entity "rippleCarryAdder4Bit_overflow" for hierarchy "rippleCarryAdder32Bit:inst|rippleCarryAdder4Bit_overflow:inst"
-Warning (275011): Block or symbol "XOR" of instance "inst" overlaps another block or symbol
-Info (12128): Elaborating entity "fullAdder" for hierarchy "rippleCarryAdder32Bit:inst|rippleCarryAdder4Bit_overflow:inst|fullAdder:inst5"
-Info (12128): Elaborating entity "halfAdder" for hierarchy "rippleCarryAdder32Bit:inst|rippleCarryAdder4Bit_overflow:inst|fullAdder:inst5|halfAdder:inst2"
-Info (12128): Elaborating entity "rippleCarryAdder4Bit" for hierarchy "rippleCarryAdder32Bit:inst|rippleCarryAdder4Bit:inst1"
-Info (12128): Elaborating entity "mux32Bit2Way" for hierarchy "mux32Bit2Way:inst6"
-Info (12128): Elaborating entity "mux4Bit2Way" for hierarchy "mux32Bit2Way:inst6|mux4Bit2Way:inst10"
-Info (12128): Elaborating entity "twosComplement32Bit" for hierarchy "twosComplement32Bit:inst26"
-Info (12128): Elaborating entity "twosComplement4Bit_overflow" for hierarchy "twosComplement32Bit:inst26|twosComplement4Bit_overflow:inst"
-Info (12128): Elaborating entity "twosComplement1Bit" for hierarchy "twosComplement32Bit:inst26|twosComplement4Bit_overflow:inst|twosComplement1Bit:inst8"
-Info (12128): Elaborating entity "twosComplement4Bit" for hierarchy "twosComplement32Bit:inst26|twosComplement4Bit:inst15"
-Info (12128): Elaborating entity "zeroDectector32Bit" for hierarchy "zeroDectector32Bit:inst28"
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4802 megabytes
-    Info: Processing ended: Thu Oct  8 15:13:04 2026
-    Info: Elapsed time: 00:00:07
+Info (12127): Elaborating entity "ALUsel_setter" for the top level hierarchy
+Info (12128): Elaborating entity "opcode_decoder" for hierarchy "opcode_decoder:inst"
+Info (12128): Elaborating entity "func7_decoder" for hierarchy "func7_decoder:inst20"
+Info (12128): Elaborating entity "func3_decoder" for hierarchy "func3_decoder:inst21"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 3 output pins
+    Info (21061): Implemented 18 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4873 megabytes
+    Info: Processing ended: Thu Oct  8 16:39:42 2026
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:13
 
 

@@ -1,0 +1,487 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 80 248 96 424)
+	(text "INPUT" (rect 0 15 9 43)(font "Arial" (font_size 6))(vertical))
+	(text "op[6..0]" (rect 0 130 10 167)(font "Arial" )(vertical))
+	(pt 8 0)
+	(drawing
+		(line (pt 12 84)(pt 12 59))
+		(line (pt 4 84)(pt 4 59))
+		(line (pt 8 55)(pt 8 0))
+		(line (pt 12 84)(pt 4 84))
+		(line (pt 4 59)(pt 8 55))
+		(line (pt 12 59)(pt 8 55))
+	)
+	(rotate90)
+	(text "VCC" (rect 7 20 16 40)(font "Arial" (font_size 6))(vertical))
+)
+(pin
+	(input)
+	(rect 120 248 136 424)
+	(text "INPUT" (rect 0 15 9 43)(font "Arial" (font_size 6))(vertical))
+	(text "func7[6..0]" (rect 0 113 10 167)(font "Arial" )(vertical))
+	(pt 8 0)
+	(drawing
+		(line (pt 12 84)(pt 12 59))
+		(line (pt 4 84)(pt 4 59))
+		(line (pt 8 55)(pt 8 0))
+		(line (pt 12 84)(pt 4 84))
+		(line (pt 4 59)(pt 8 55))
+		(line (pt 12 59)(pt 8 55))
+	)
+	(rotate90)
+	(text "VCC" (rect 7 20 16 40)(font "Arial" (font_size 6))(vertical))
+)
+(pin
+	(input)
+	(rect 160 248 176 424)
+	(text "INPUT" (rect 0 15 9 43)(font "Arial" (font_size 6))(vertical))
+	(text "func3[2..0]" (rect 0 113 10 167)(font "Arial" )(vertical))
+	(pt 8 0)
+	(drawing
+		(line (pt 12 84)(pt 12 59))
+		(line (pt 4 84)(pt 4 59))
+		(line (pt 8 55)(pt 8 0))
+		(line (pt 12 84)(pt 4 84))
+		(line (pt 4 59)(pt 8 55))
+		(line (pt 12 59)(pt 8 55))
+	)
+	(rotate90)
+	(text "VCC" (rect 7 20 16 40)(font "Arial" (font_size 6))(vertical))
+)
+(pin
+	(output)
+	(rect 1016 152 1192 168)
+	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
+	(text "Bsel[1..0]" (rect 90 0 137 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1016 200 1192 216)
+	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
+	(text "PCSel[1..0]" (rect 90 0 146 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1016 248 1192 264)
+	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
+	(text "ALUsel[2..0]" (rect 90 0 151 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1016 296 1192 312)
+	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
+	(text "WDsel[1..0]" (rect 90 0 149 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1016 344 1192 360)
+	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
+	(text "MemRW" (rect 90 0 132 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1016 392 1192 408)
+	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
+	(text "REGwrite" (rect 90 0 136 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 328 40 488 136)
+	(text "Bsel_setter" (rect 5 0 69 13)(font "DejaVu Sans Condensed" (font_size 8)))
+	(text "inst" (rect 8 81 24 91)(font "DejaVu Sans Condensed" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "op[6..0]" (rect 0 0 44 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "op[6..0]" (rect 21 27 65 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "Bsel[1..0]" (rect 0 0 55 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "Bsel[1..0]" (rect 83 27 138 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 144 80))
+	)
+)
+(symbol
+	(rect 328 160 496 256)
+	(text "PCSel_setter" (rect 5 0 78 13)(font "DejaVu Sans Condensed" (font_size 8)))
+	(text "inst2" (rect 8 81 30 91)(font "DejaVu Sans Condensed" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "op[6..0]" (rect 0 0 44 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "op[6..0]" (rect 21 27 65 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "PCSel[1..0]" (rect 0 0 63 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "PCSel[1..0]" (rect 83 27 146 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 168 32)(pt 152 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 80))
+	)
+)
+(symbol
+	(rect 328 280 520 376)
+	(text "ALUsel_setter" (rect 5 0 85 13)(font "DejaVu Sans Condensed" (font_size 8)))
+	(text "inst3" (rect 8 81 30 91)(font "DejaVu Sans Condensed" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "op[6..0]" (rect 0 0 44 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "op[6..0]" (rect 21 27 65 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "func7[6..0]" (rect 0 0 61 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "func7[6..0]" (rect 21 43 82 56)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "func3[2..0]" (rect 0 0 61 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "func3[2..0]" (rect 21 59 82 72)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "ALUsel[2..0]" (rect 0 0 70 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "ALUsel[2..0]" (rect 100 27 170 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 192 32)(pt 176 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 176 80))
+	)
+)
+(symbol
+	(rect 328 392 496 488)
+	(text "WDSel_setter" (rect 5 0 84 13)(font "DejaVu Sans Condensed" (font_size 8)))
+	(text "inst4" (rect 8 81 30 91)(font "DejaVu Sans Condensed" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "op[6..0]" (rect 0 0 44 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "op[6..0]" (rect 21 27 65 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "WDsel[1..0]" (rect 0 0 68 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "WDsel[1..0]" (rect 79 27 147 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 168 32)(pt 152 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 80))
+	)
+)
+(symbol
+	(rect 680 272 832 368)
+	(text "REGwrite_setter" (rect 5 0 99 13)(font "DejaVu Sans Condensed" (font_size 8)))
+	(text "inst5" (rect 8 81 30 91)(font "DejaVu Sans Condensed" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "op[6..0]" (rect 0 0 44 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "op[6..0]" (rect 21 27 65 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "REGwrite" (rect 0 0 54 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "REGwrite" (rect 77 27 131 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 152 32)(pt 136 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 80))
+	)
+)
+(symbol
+	(rect 680 112 832 208)
+	(text "MemRW_setter" (rect 5 0 94 13)(font "DejaVu Sans Condensed" (font_size 8)))
+	(text "inst6" (rect 8 81 30 91)(font "DejaVu Sans Condensed" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "op[6..0]" (rect 0 0 44 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "op[6..0]" (rect 21 27 65 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "MemRW" (rect 0 0 49 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "MemRW" (rect 83 27 132 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 152 32)(pt 136 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 80))
+	)
+)
+(connector
+	(text "func3[2..0]" (rect 152 187 162 238)(font "DejaVu Sans Condensed" )(vertical))
+	(pt 168 248)
+	(pt 168 200)
+	(bus)
+)
+(connector
+	(text "func7[6..0]" (rect 112 187 122 238)(font "DejaVu Sans Condensed" )(vertical))
+	(pt 128 248)
+	(pt 128 200)
+	(bus)
+)
+(connector
+	(text "op[6..0]" (rect 72 200 82 237)(font "DejaVu Sans Condensed" )(vertical))
+	(pt 88 248)
+	(pt 88 200)
+	(bus)
+)
+(connector
+	(text "op[6..0]" (rect 288 56 325 66)(font "DejaVu Sans Condensed" ))
+	(pt 328 72)
+	(pt 272 72)
+	(bus)
+)
+(connector
+	(text "op[6..0]" (rect 289 176 326 186)(font "DejaVu Sans Condensed" ))
+	(pt 328 192)
+	(pt 272 192)
+	(bus)
+)
+(connector
+	(pt 328 312)
+	(pt 304 312)
+	(bus)
+)
+(connector
+	(text "op[6..0]" (rect 288 264 298 301)(font "DejaVu Sans Condensed" )(vertical))
+	(pt 304 312)
+	(pt 304 280)
+	(bus)
+)
+(connector
+	(pt 328 328)
+	(pt 272 328)
+	(bus)
+)
+(connector
+	(text "func7[6..0]" (rect 256 267 266 318)(font "DejaVu Sans Condensed" )(vertical))
+	(pt 272 328)
+	(pt 272 280)
+	(bus)
+)
+(connector
+	(pt 328 344)
+	(pt 304 344)
+	(bus)
+)
+(connector
+	(text "func3[2..0]" (rect 280 331 290 382)(font "DejaVu Sans Condensed" )(vertical))
+	(pt 304 344)
+	(pt 304 368)
+	(bus)
+)
+(connector
+	(pt 328 424)
+	(pt 304 424)
+	(bus)
+)
+(connector
+	(text "op[6..0]" (rect 288 416 298 453)(font "DejaVu Sans Condensed" )(vertical))
+	(pt 304 424)
+	(pt 304 464)
+	(bus)
+)
+(connector
+	(text "Bsel[1..0]" (rect 515 56 561 66)(font "DejaVu Sans Condensed" ))
+	(pt 488 72)
+	(pt 528 72)
+	(bus)
+)
+(connector
+	(text "PCSel[1..0]" (rect 519 176 572 186)(font "DejaVu Sans Condensed" ))
+	(pt 496 192)
+	(pt 528 192)
+	(bus)
+)
+(connector
+	(text "ALUsel[2..0]" (rect 542 296 601 306)(font "DejaVu Sans Condensed" ))
+	(pt 520 312)
+	(pt 552 312)
+	(bus)
+)
+(connector
+	(text "WDsel[1..0]" (rect 525 408 580 418)(font "DejaVu Sans Condensed" ))
+	(pt 496 424)
+	(pt 536 424)
+	(bus)
+)
+(connector
+	(pt 680 144)
+	(pt 656 144)
+	(bus)
+)
+(connector
+	(text "op[6..0]" (rect 632 128 642 165)(font "DejaVu Sans Condensed" )(vertical))
+	(pt 656 144)
+	(pt 656 176)
+	(bus)
+)
+(connector
+	(pt 832 144)
+	(pt 856 144)
+)
+(connector
+	(text "MemRW" (rect 839 150 849 190)(font "DejaVu Sans Condensed" )(vertical))
+	(pt 856 144)
+	(pt 856 176)
+)
+(connector
+	(text "op[6..0]" (rect 648 288 658 325)(font "DejaVu Sans Condensed" )(vertical))
+	(pt 664 304)
+	(pt 664 336)
+	(bus)
+)
+(connector
+	(pt 832 304)
+	(pt 856 304)
+)
+(connector
+	(text "REGwrite" (rect 840 306 850 349)(font "DejaVu Sans Condensed" )(vertical))
+	(pt 856 304)
+	(pt 856 336)
+)
+(connector
+	(pt 664 304)
+	(pt 680 304)
+	(bus)
+)
+(connector
+	(text "ALUsel[2..0]" (rect 953 240 1012 250)(font "DejaVu Sans Condensed" ))
+	(pt 1016 256)
+	(pt 960 256)
+	(bus)
+)
+(connector
+	(text "PCSel[1..0]" (rect 962 192 1015 202)(font "DejaVu Sans Condensed" ))
+	(pt 1016 208)
+	(pt 960 208)
+	(bus)
+)
+(connector
+	(text "Bsel[1..0]" (rect 962 144 1008 154)(font "DejaVu Sans Condensed" ))
+	(pt 1016 160)
+	(pt 960 160)
+	(bus)
+)
+(connector
+	(text "WDsel[1..0]" (rect 965 288 1020 298)(font "DejaVu Sans Condensed" ))
+	(pt 1016 304)
+	(pt 960 304)
+	(bus)
+)
+(connector
+	(text "MemRW" (rect 962 336 1002 346)(font "DejaVu Sans Condensed" ))
+	(pt 1016 352)
+	(pt 960 352)
+)
+(connector
+	(text "REGwrite" (rect 961 384 1004 394)(font "DejaVu Sans Condensed" ))
+	(pt 1016 400)
+	(pt 960 400)
+)

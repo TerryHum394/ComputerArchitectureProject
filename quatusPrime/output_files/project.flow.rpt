@@ -1,5 +1,5 @@
 Flow report for project
-Thu Oct  8 15:13:04 2026
+Thu Oct  8 16:46:31 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -38,24 +38,29 @@ on the Quartus Prime software download page.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+-----------------------------+-------------------------------------------------+
-; Flow Status                 ; Successful - Thu Oct  8 15:13:04 2026           ;
-; Quartus Prime Version       ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
-; Revision Name               ; project                                         ;
-; Top-level Entity Name       ; aluProject                                      ;
-; Family                      ; Cyclone V                                       ;
-; Device                      ; 5CSEBA6U23I7                                    ;
-; Timing Models               ; Final                                           ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                       ;
-; Total registers             ; N/A until Partition Merge                       ;
-; Total pins                  ; N/A until Partition Merge                       ;
-; Total virtual pins          ; N/A until Partition Merge                       ;
-; Total block memory bits     ; N/A until Partition Merge                       ;
-; Total PLLs                  ; N/A until Partition Merge                       ;
-; Total DLLs                  ; N/A until Partition Merge                       ;
-+-----------------------------+-------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Thu Oct  8 16:46:31 2026           ;
+; Quartus Prime Version           ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
+; Revision Name                   ; project                                         ;
+; Top-level Entity Name           ; ALUsel_setter                                   ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CSEBA6U23I7                                    ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 0                                               ;
+; Total pins                      ; 20                                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 0                                               ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -63,60 +68,66 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/08/2026 15:12:58 ;
+; Start date & time ; 10/08/2026 16:39:35 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; project             ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                               ;
-+-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
-+-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 231333251506221.179143277813168        ; --            ; --          ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                 ; Questa Altera FPGA (Verilog)           ; <None>        ; --          ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP              ; 100                                    ; --            ; --          ; --                                ;
-; MIN_CORE_JUNCTION_TEMP              ; -40                                    ; --            ; --          ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; aluProject  ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; aluProject  ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; aluProject  ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                    ; aluProject                             ; project       ; --          ; --                                ;
-+-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                 ;
++-------------------------------------+----------------------------------------+---------------+---------------+-----------------------------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id                        ;
++-------------------------------------+----------------------------------------+---------------+---------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID               ; 231333251506221.179143797510068        ; --            ; --            ; --                                ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --            ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --            ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --            ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --            ; eda_board_design_symbol           ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --            ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                 ; Questa Altera FPGA (Verilog)           ; <None>        ; --            ; --                                ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --            ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP              ; 100                                    ; --            ; --            ; --                                ;
+; MIN_CORE_JUNCTION_TEMP              ; -40                                    ; --            ; --            ; --                                ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; ALUsel_setter ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; ALUsel_setter ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; ALUsel_setter ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --            ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --            ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --            ; --                                ;
+; TOP_LEVEL_ENTITY                    ; ALUsel_setter                          ; project       ; --            ; --                                ;
++-------------------------------------+----------------------------------------+---------------+---------------+-----------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                          ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4802 MB             ; 00:00:13                           ;
-; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:13                           ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4873 MB             ; 00:00:13                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4752 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4768 MB             ; 00:00:00                           ;
+; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:14                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                      ;
-+------------------------+------------------+------------+------------+----------------+
-; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; W8493366         ; Windows 10 ; 10.0       ; x86_64         ;
-+------------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; W8493366         ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; W8493366         ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; W8493366         ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off project -c project --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off project -c project
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off project -c project --vector_source=C:/Scratch/s3947618/quatusPrime/Waveform_ALUsel_setter.vwf --testbench_file=C:/Scratch/s3947618/quatusPrime/simulation/qsim/Waveform_ALUsel_setter.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Scratch/s3947618/quatusPrime/simulation/qsim/ project -c project
 
 
 
